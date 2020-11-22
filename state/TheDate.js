@@ -1,11 +1,20 @@
 import React from 'react';
 
-class TheDate extends React.Component {
-    constructor() {
 
-    }
-    render() {
-        return <div />
-    }
+class TheDate extends React.Component {
+     state = {
+    foo: 'foo',
+    hello: 'Hello, world!',
+    list: [1, 2, 3],
+    obj: { nested: 'object', yes: true },
 }
-export default TheDate
+
+render() {
+    console.log(this.state)
+    return (
+        <div>{this.state.hello}</div>
+    )
+}
+}
+     export default TheDate
+
